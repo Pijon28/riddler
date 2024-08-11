@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A ransom</title>
+</head>
+<body>
+
+    <script>
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value.trim();
+            const correctAnswer = "4";
+            const feedbackElement = document.getElementById('feedback');
+
+            if (userAnswer === correctAnswer) {
+                feedbackElement.textContent = "Correct!";
+                feedbackElement.classList.add('correct');
+                feedbackElement.classList.remove('incorrect');
+            } else {
+                feedbackElement.textContent = "Incorrect. Try again!";
+                feedbackElement.classList.add('incorrect');
+                feedbackElement.classList.remove('correct');
+            }
+        }
+    </script>
+
+
+    <p class="ransom" style="--rotation: 3deg; --size: 28px; --color: #000; --bg-color: #ff0; display:block; margin-bottom: 40px;">Welcome to The Riddler's nest!</p>
+
+
+    <p class="ransom" style="--rotation: -3deg; --size: 28px; --color: #000; --bg-color: rgb(0, 255, 242); display:block; margin-top:20px; margin-bottom: 20px;">If you are reading this,I'm probably holding someone ransom.</p>
+
+    <p class="ransom" style="--rotation: 0deg; --size: 28px; --color: #000; --bg-color: rgb(0, 255, 13); display:block; margin-top:30px; margin-bottom:30px;">But here's the thing. I know for a fact that both of us don't really care for this person. Just look at this his pathetic face</p>
+
+    <img src="https://i.ebayimg.com/images/g/hlgAAOSwgXRjuu3I/s-l1200.webp" width="200px" height="auto">
+
+    <p class="ransom" style="--rotation: 5deg; --size: 28px; --color: #000; --bg-color: rgb(178, 24, 224); display:block; margin-top:30px; margin-bottom:30px;">HAHAHAHA, just kidding. I know you care.... that's why he's the ransom. Else there is no point. (He is smiling in pain, trust me)</p>
+
+    <p class="ransom" style="--rotation: 6deg; --size: 28px; --color: #000; --bg-color: rgb(255, 123, 0); display:block; margin-top:30px; margin-bottom:30px;">Before you say "Wait, he is with me!"No... That's a fake.</p>
+
+
+    <p class="ransom" style="--rotation: 0deg; --size: 28px; --color: #000; --bg-color: rgb(85, 240, 227); display:block; margin-top:30px; margin-bottom:30px;">Here is the thing... I hear it's your birthday! and I love birthdays! I hear that you are a math major too! and the riddler LOVES logic and math. (I mean, can you imagine the riddler who doesn't love logic?) <br> 
+
+        <br>
+        
+        Im willing to cut you a deal. Solve some questions and I'll let this little dude walk. (Or should I say.....waddle?) </p>
+
+        <p class="ransom" style="--rotation: 0deg; --size: 28px; --color: #000; --bg-color: rgb(245, 208, 0); display:block; margin-top:30px; margin-bottom:30px;">Your mission, should you choose to accept it, is to solve MY RIDDLES!</p>
+
+        <p class="ransom" style="--rotation: 0deg; --size: 28px; --color: #000; --bg-color: rgb(231, 90, 90); display:block; margin-top:30px; margin-bottom:30px;">LET THE GAMES BEGIN!</p>
+
+        <p class="ransom" style="--rotation: 0deg; --size: 28px; --color: #000; --bg-color: rgb(90, 231, 224); display:block; margin-top:30px; margin-bottom:30px;">Let's start off simple</p>
+
+        
+        
+        <div id="question1" class="question">
+            <p>Riddle 0: What is the derivative of x<sup>2</sup>-3x+2 ?</p>
+            <input type="text" id="answer1">
+            <button onclick="checkAnswer(1, '2x-3')">Submit</button>
+            <div id="result1"></div>
+        </div>
+    
+    
+        <script>
+            function checkAnswer(questionNumber, correctAnswer) {
+                const userAnswer = document.getElementById(`answer${questionNumber}`).value.trim();
+                const resultElement = document.getElementById(`result${questionNumber}`);
+    
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    resultElement.textContent = "Not bad!";
+                    resultElement.className = "correct";
+                } else {
+                    resultElement.textContent = "Seriously? I think I overestimated you";
+                    resultElement.className = "incorrect";
+                }
+            }
+        </script>
+
+    <div id="question2" class="question">
+        <p>Riddle 1: I am an odd number. Take away one letter, and I become even. What number am I? (Hint:I will check your spelling!) </p>
+        <input type="text" id="answer2">
+        <button onclick="checkAnswer(2, 'seven')">Submit</button>
+        <div id="result2" class="result"></div>
+    </div>
+
+    <div id="question3" class="question">
+        <p>Riddle 2: What comes once in a minute, twice in a moment, but never in a thousand years?</p>
+        <input type="text" id="answer3">
+        <button onclick="checkAnswer(3, 'm')">Submit</button>
+        <div id="result3" class="result"></div>
+    </div>
+
+    <div id="question4" class="question">
+        <p>Riddle 3: A man is looking at a picture of someone. His friend asks, "Who is it you are looking at?" The man replies, "Brothers and sisters, I have none. But that man's father in the picture is my father’s son." Who is the man in the picture?
+        (HINT: I am satisfied with one word answers)
+        </p>
+        <input type="text" id="answer4">
+        <button onclick="checkAnswer(4, 'son')">Submit</button>
+        <div id="result4" class="result"></div>
+    </div> 
+
+    <button onclick="redirectToPage()">Click here to proceed</button>
+
+    <script>
+        function redirectToPage(){
+            window.location.href= "gumshoes.html"
+        }
+    </script>
+
+        
+
+
+
+
+
+
+    
+
+    
+
+
+    
+</body>
+</html>

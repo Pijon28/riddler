@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A ransom</title>
+</head>
+<body>
+
+    <script>
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value.trim();
+            const correctAnswer = "4";
+            const feedbackElement = document.getElementById('feedback');
+
+            if (userAnswer === correctAnswer) {
+                feedbackElement.textContent = "Correct!";
+                feedbackElement.classList.add('correct');
+                feedbackElement.classList.remove('incorrect');
+            } else {
+                feedbackElement.textContent = "Incorrect. Try again!";
+                feedbackElement.classList.add('incorrect');
+                feedbackElement.classList.remove('correct');
+            }
+        }
+    </script>
+
+
+    <p class="ransom" style="--rotation: 3deg; --size: 28px; --color: #000; --bg-color: #ff0; display:block; margin-bottom: 40px;">Looks like you made it!</p>
+
+    <p class="ransom" style="--rotation: 3deg; --size: 28px; --color: #000; --bg-color: rgb(33, 205, 218); display:block; margin-bottom: 40px;">We weren't able to get him this time! but your information was crucial! It really helped us narrow down our scope. Well done pal!</p>
+
+    <p class="ransom" style="--rotation: 3deg; --size: 28px; --color: #000; --bg-color: rgb(171, 85, 197); display:block; margin-bottom: 40px;">And oh! We also got to know that it is your birthday! Happy birthday! Have a wonderful year ahead. We see that you are in university and university life can be tough but you'll pull through like you always do. Have faith! We believe in you.</p>
+
+    <p class="ransom" style="--rotation: -3deg; --size: 28px; --color: #000; --bg-color: rgb(123, 255, 0); display:block; margin-bottom: 40px;">Also,We know that you absolutely suck at keeping secrets. But here's the thing. You gotta keep this one a secret. Else you risk compromising our mission. The Riddler will get away and we won't be able to track him. I don't want ANYONE knowing about this apart from Secret Agent V. He's currently in Dubai and he's on The Riddler's tail. He is the <b>ONLY</b> one you can talk to this about.
+    </p>
+
+    <p class="ransom" style="--rotation: 3deg; --size: 28px; --color: #000; --bg-color: #ff0; display:block; margin-bottom: 40px;">ciao!</p>
+
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>

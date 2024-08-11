@@ -1,0 +1,122 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.question p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #333;
+    width: 50%;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+
+button:hover {
+    background-color: #444;
+}
+
+#birthdayMessage {
+    display: none;
+    font-size: 30px;
+    color: #c00;
+    margin-top: 30px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px dashed #c00;
+}
+
+.correct, .incorrect {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* Ransom Note Text Style */
+.ransom {
+    font-family: 'Comic Sans MS', 'Courier New', Courier, sans-serif;
+    display: inline-block;
+    transform: rotate(var(--rotation, 0deg));
+    font-size: var(--size, 24px);
+    color: var(--color, #000);
+    margin: 0 2px;
+    padding: 5px;
+    background-color: var(--bg-color, #ff0);
+    border: 2px solid #000;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#result1 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#result2 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#result3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#result4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#result5 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+

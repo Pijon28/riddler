@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A ransom</title>
+</head>
+<body>
+
+    <script>
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value.trim();
+            const correctAnswer = "4";
+            const feedbackElement = document.getElementById('feedback');
+
+            if (userAnswer === correctAnswer) {
+                feedbackElement.textContent = "Correct!";
+                feedbackElement.classList.add('correct');
+                feedbackElement.classList.remove('incorrect');
+            } else {
+                feedbackElement.textContent = "Incorrect. Try again!";
+                feedbackElement.classList.add('incorrect');
+                feedbackElement.classList.remove('correct');
+            }
+        }
+    </script>
+
+
+    <p class="ransom" style="--rotation: 3deg; --size: 28px; --color: #000; --bg-color: #ff0; display:block; margin-bottom: 40px;">THIS MESSAGE IS AN INTERCEPTION.</p>
+
+    <img src="https://static.wikia.nocookie.net/aceattorney/images/4/46/Gumshoe_OA.png/revision/latest/scale-to-width-down/997?cb=20230730072305>" height="1000px" width="auto">
+
+    <p class="ransom" style="--rotation: -3deg; --size: 28px; --color: #000; --bg-color: rgb(81, 236, 9); display:block; margin-bottom: 40px;">psssstt! It's me,Detective Gumshoes <br>We have no time for introductions. I have been after The Riddler for so long. Our cyber team noticed that you are negotiating terms with him. We figured you may know his base of operations. We know he is somewhere in the gulf </p>
+
+    <div id="question5" class="question">
+        <p>Do you know where he is ?</p>
+        <input type="text" id="answer5">
+        <button onclick="checkAnswer(5, 'dubai')">Submit</button>
+        <div id="result5"></div>
+    </div>
+
+    <script>
+        function checkAnswer(questionNumber, correctAnswer) {
+            const userAnswer = document.getElementById(`answer${questionNumber}`).value.trim();
+            const resultElement = document.getElementById(`result${questionNumber}`);
+
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                resultElement.textContent = "Finally! Thanks pal. We'll get your ransom, don't worry about it";
+                resultElement.className = "correct";
+            } else {
+                resultElement.textContent = "We don't have time for shenanigans,pal!";
+                resultElement.className = "incorrect";
+            }
+        }
+    </script>
+
+<button onclick="redirectToPage()">Click here to proceed</button>
+
+
+<script>
+    function redirectToPage(){
+        window.location.href= "finale.html"
+    }
+</script>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+    
+
+
+    
+</body>
+</html>
